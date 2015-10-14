@@ -64,7 +64,52 @@ namespace Task8AndroidWeather
 		{
 			
 			// aapt resource value: 0x7f060000
-			public const int MyButton = 2131099648;
+			public const int CityName = 2131099648;
+			
+			// aapt resource value: 0x7f060002
+			public const int CurrentDateTime = 2131099650;
+			
+			// aapt resource value: 0x7f060004
+			public const int CurrentTemperature = 2131099652;
+			
+			// aapt resource value: 0x7f060003
+			public const int Description = 2131099651;
+			
+			// aapt resource value: 0x7f060007
+			public const int Humidity = 2131099655;
+			
+			// aapt resource value: 0x7f060006
+			public const int MaxTemperature = 2131099654;
+			
+			// aapt resource value: 0x7f060005
+			public const int MinTemperature = 2131099653;
+			
+			// aapt resource value: 0x7f060001
+			public const int SearchButton = 2131099649;
+			
+			// aapt resource value: 0x7f060008
+			public const int SecondDate = 2131099656;
+			
+			// aapt resource value: 0x7f06000e
+			public const int SecondDateHumidity = 2131099662;
+			
+			// aapt resource value: 0x7f06000c
+			public const int SecondDateMaxTemperature = 2131099660;
+			
+			// aapt resource value: 0x7f06000a
+			public const int SecondDateMinTemperature = 2131099658;
+			
+			// aapt resource value: 0x7f060009
+			public const int ThirdDate = 2131099657;
+			
+			// aapt resource value: 0x7f06000f
+			public const int ThirdDateHumidity = 2131099663;
+			
+			// aapt resource value: 0x7f06000d
+			public const int ThirdDateMaxTemperature = 2131099661;
+			
+			// aapt resource value: 0x7f06000b
+			public const int ThirdDateMinTemperature = 2131099659;
 			
 			static Id()
 			{

@@ -1,13 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
-<Button  
-    android:id="@+id/MyButton"
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/Hello"
-    />
-</LinearLayout>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:columnCount="4"
+    android:orientation="horizontal">
+    <EditText
+        android:id="@+id/CityName"
+        android:text="Input City"
+        android:layout_columnSpan="3" />
+    <Button
+        android:id="@+id/SearchButton"
+        android:text="Search" />
+    <TextView
+        android:id="@+id/CurrentDateTime"
+        android:layout_columnSpan="4" />
+    <TextView
+        android:id="@+id/Description"
+        android:layout_columnSpan="4" />
+    <TextView
+        android:id="@+id/CurrentTemperature"
+        android:layout_columnSpan="4" />
+    <TextView
+        android:id="@+id/MinTemperature"
+        android:layout_columnSpan="4" />
+    <TextView
+        android:id="@+id/MaxTemperature"
+        android:layout_columnSpan="4" />
+    <TextView
+        android:id="@+id/Humidity"
+        android:layout_columnSpan="4" />
+    <TextView
+        android:id="@+id/SecondDate"
+        android:layout_columnSpan="2" />
+    <TextView
+        android:id="@+id/ThirdDate"
+        android:layout_columnSpan="2" />
+    <TextView
+        android:id="@+id/SecondDateMinTemperature"
+        android:layout_columnSpan="2" />
+    <TextView
+        android:id="@+id/ThirdDateMinTemperature"
+        android:layout_columnSpan="2" />
+    <TextView
+        android:id="@+id/SecondDateMaxTemperature"
+        android:layout_columnSpan="2" />
+    <TextView
+        android:id="@+id/ThirdDateMaxTemperature"
+        android:layout_columnSpan="2" />
+    <TextView
+        android:id="@+id/SecondDateHumidity"
+        android:layout_columnSpan="2" />
+    <TextView
+        android:id="@+id/ThirdDateHumidity"
+        android:layout_columnSpan="2" />
+</GridLayout>
