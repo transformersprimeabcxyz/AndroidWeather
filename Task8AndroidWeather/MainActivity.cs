@@ -80,9 +80,8 @@ namespace Task8AndroidWeather
                 FindViewById<TextView>(Resource.Id.ThirdDateHumidity).Text = String.Format("humidity {0} %",
                     thirdDayMain.humidity);
             }
-            catch 
+            catch
             {
-                
             }
         }
     }

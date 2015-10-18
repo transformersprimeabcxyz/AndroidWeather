@@ -1,57 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    android:columnCount="4"
-    android:orientation="horizontal">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="10dip"
+    android:layout_marginTop="10dip">
     <EditText
         android:id="@+id/CityName"
-        android:text="Input City"
-        android:layout_columnSpan="3" />
+        android:hint="Enter city name here"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="50dip" />
     <Button
         android:id="@+id/SearchButton"
-        android:text="Search" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="50dip" />
     <TextView
         android:id="@+id/CurrentDateTime"
-        android:layout_columnSpan="4" />
+        android:text="Current Date Time"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CityName"
+        android:layout_marginTop="20dip"
+        android:textSize="20dip" />
     <TextView
         android:id="@+id/Description"
-        android:layout_columnSpan="4" />
+        android:text="Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CurrentDateTime"
+        android:layout_marginTop="17dip"
+        android:textSize="17dip" />
     <TextView
         android:id="@+id/CurrentTemperature"
-        android:layout_columnSpan="4" />
+        android:text="CurrentTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Description"
+        android:layout_marginTop="17dip"
+        android:textSize="17dip" />
     <TextView
         android:id="@+id/MinTemperature"
-        android:layout_columnSpan="4" />
+        android:text="MinTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CurrentTemperature"
+        android:layout_marginTop="17dip"
+        android:textSize="17dip" />
     <TextView
         android:id="@+id/MaxTemperature"
-        android:layout_columnSpan="4" />
+        android:text="MaxTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/MinTemperature"
+        android:layout_marginTop="17dip"
+        android:textSize="17dip" />
     <TextView
         android:id="@+id/Humidity"
-        android:layout_columnSpan="4" />
+        android:text="Humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/MaxTemperature"
+        android:layout_marginTop="17dip"
+        android:textSize="17dip" />
     <TextView
         android:id="@+id/SecondDate"
-        android:layout_columnSpan="2" />
-    <TextView
-        android:id="@+id/ThirdDate"
-        android:layout_columnSpan="2" />
+        android:text="Second Date"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Humidity"
+        android:layout_marginTop="25dip"
+        android:textSize="15dip" />
     <TextView
         android:id="@+id/SecondDateMinTemperature"
-        android:layout_columnSpan="2" />
-    <TextView
-        android:id="@+id/ThirdDateMinTemperature"
-        android:layout_columnSpan="2" />
+        android:text="Min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SecondDate"
+        android:layout_marginTop="15dip"
+        android:textSize="15dip" />
     <TextView
         android:id="@+id/SecondDateMaxTemperature"
-        android:layout_columnSpan="2" />
-    <TextView
-        android:id="@+id/ThirdDateMaxTemperature"
-        android:layout_columnSpan="2" />
+        android:text="Max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SecondDateMinTemperature"
+        android:layout_marginTop="15dip"
+        android:textSize="15dip" />
     <TextView
         android:id="@+id/SecondDateHumidity"
-        android:layout_columnSpan="2" />
+        android:text="Humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SecondDateMaxTemperature"
+        android:layout_marginTop="15dip"
+        android:textSize="15dip" />
+    <TextView
+        android:id="@+id/ThirdDate"
+        android:text="Third Date"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Humidity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dip"
+        android:textSize="15dip" />
+    <TextView
+        android:id="@+id/ThirdDateMinTemperature"
+        android:text="Min "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/ThirdDate"
+        android:layout_below="@id/ThirdDate"
+        android:layout_marginTop="15dip"
+        android:textSize="15dip" />
+    <TextView
+        android:id="@+id/ThirdDateMaxTemperature"
+        android:text="Max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/ThirdDateMinTemperature"
+        android:layout_below="@id/ThirdDateMinTemperature"
+        android:layout_marginTop="15dip"
+        android:textSize="15dip" />
     <TextView
         android:id="@+id/ThirdDateHumidity"
-        android:layout_columnSpan="2" />
-</GridLayout>
+        android:text="Humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/ThirdDateMaxTemperature"
+        android:layout_below="@id/ThirdDateMaxTemperature"
+        android:layout_marginTop="15dip"
+        android:textSize="15dip" />
+</RelativeLayout>
